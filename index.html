@@ -1,227 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flashcards Estudos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Esportes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="cabecalho">
-    <div class="titulo">
-      <h2>Trabalho de Gabriel</h2>
-    </div>
-    <div class="mudar">
-      <h2>Notas para estudos</h2>
-    </div>
-    <p>Este é um projeto desenvolvido com o intuito de ajudar e auxiliar nos estudos  </p>
-    <p>Os cards estão organizados em um layout 3x3!</p>u
-  </header>
-
-  <main>
-    <section id="container">
-      <!-- Card 1 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo1">
-            <div class="cartao1">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Soma</h3>
-                </div>
-                <div class="cartao-conteudo-pergunta">quanto é 10+4</div>
-                <div class="cartao-conteudo-resposta">14</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Basta juntar um número ao outro no caso 10 e o 4 que juntos resultam em 14</p>
-              </div>
-            </div>
-          </div>
+    <header class="cabecalho">
+        <div class="titulo">
+            <h2>Tipos de Esportes</h2>
         </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo2">
-            <div class="cartao2">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Subtração</h3>
-                </div>
-                <div class="cartao-conteudo-pergunta">Quanto é 6-5</div>
-                <div class="cartao-conteudo-resposta">1</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Basta diminuir um número pelo outro no caso 6 e 5, resultando em 1</p>
-              </div>
-            </div>
-          </div>
+        <div class="mudar">
+            <h2>(Clique nos cards para ver informações sobre cada esporte)</h2>
         </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo3">
-            <div class="cartao3">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Verbo</h3>
+        <p>Este projeto apresenta diferentes categorias de esportes, 
+        mostrando suas características principais e curiosidades.</p>
+        <p>Os cards estão organizados em uma matriz 3x3, 
+        cada um representando um tipo diferente de atividade esportiva.</p>
+    </header>
+    <main>
+        <section id="container">
+            <!-- Card 1 - Esportes Coletivos -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo1">
+                        <div class="cartao1">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes Coletivos</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Quais são as principais características?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes Coletivos</h3>
+                                <p>Praticados em equipe, exigem cooperação e estratégia. Exemplos: Futebol, Basquete, Vôlei, Handebol. Desenvolvem habilidades sociais e trabalho em equipe.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">O que é um verbo</div>
-                <div class="cartao-conteudo-resposta">é uma palavra que expressa uma ação, estado ou fenômeno da natureza e que varia em tempo, modo, pessoa e número. </div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Um verbo é uma palavra que expressa uma ação, um estado, um processo ou um fenômeno da natureza. Ele pode ser conjugado em diferentes tempos, modos, pessoas e números para indicar quando a ação ocorre, como ela acontece e quem a realiza. 
-Exemplos:
-Ação: "Eu corro todos os dias." (O verbo "corro" indica a ação de correr) 
-Estado: "Ela está feliz." (O verbo "está" indica o estado de ser feliz) 
-Fenômeno da natureza: " Choveu muito ontem." (O verbo "choveu" indica um fenômeno natural) </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 4 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo4">
-            <div class="cartao4">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Química</h3>
+            <!-- Card 2 - Esportes Individuais -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo2">
+                        <div class="cartao2">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes Individuais</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">O que os diferencia?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes Individuais</h3>
+                                <p>Praticados individualmente, focam no autodesenvolvimento. Exemplos: Tênis, Atletismo, Natação, Golfe. Desenvolvem disciplina e superação pessoal.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta"> O que é Química</div>
-                <div class="cartao-conteudo-resposta">A química é a ciência que estuda a matéria, suas propriedades, composição e estrutura, bem como as transformações que ela pode sofrer e a energia envolvida nesses processos.</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Em resumo, a química investiga os elementos e compostos que formam tudo no universo e as reações que levam à criação de novas substâncias. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 5 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo5">
-            <div class="cartao5">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Divisão</h3>
+            <!-- Card 3 - Esportes Radicais -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo3">
+                        <div class="cartao3">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes Radicais</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Por que são considerados radicais?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes Radicais</h3>
+                                <p>Envolvem alto risco e adrenalina. Exemplos: Surf, Escalada, Paraquedismo, Parkour. Exigem preparo físico e controle emocional.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">quanto é 20/5</div>
-                <div class="cartao-conteudo-resposta">4</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Basta repartir um número por outro, no caso 20 e 5, resultando em 4.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 6 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo6">
-            <div class="cartao6">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Números Primos</h3>
+            <!-- Card 4 - Esportes de Combate -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo4">
+                        <div class="cartao4">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes de Combate</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual seu principal objetivo?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes de Combate</h3>
+                                <p>Envolvem confronto físico entre oponentes. Exemplos: Boxe, Judô, Karatê, Esgrima. Desenvolvem autocontrole e defesa pessoal.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">Quais são os primeiros 5 números primos?</div>
-                <div class="cartao-conteudo-resposta"> 2, 3, 5, 7 e 11</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>São números diviseis apenas por 1 ou ele mesmo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 7 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo7">
-            <div class="cartao7">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Substantivo Próprio</h3>
+            <!-- Card 5 - Esportes Aquáticos -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo5">
+                        <div class="cartao5">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes Aquáticos</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Onde são praticados?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes Aquáticos</h3>
+                                <p>Praticados na água, em piscinas ou ambientes naturais. Exemplos: Natação, Polo Aquático, Mergulho, Canoagem. Melhoram capacidade respiratória.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">O que é um substantivo próprio?</div>
-                <div class="cartao-conteudo-resposta">é uma palavra que nomeia especificamente um ser, lugar, instituição ou objeto, diferenciando-o de outros da mesma espécie</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Um substantivo próprio é o nome de uma entidade específica: por exemplo, uma pessoa, uma organização ou um lugar. Substantivos próprios sempre têm a primeira letra maiúscula</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 8 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo8">
-            <div class="cartao8">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Números Romanos</h3>
+            <!-- Card 6 - Esportes de Inverno -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo6">
+                        <div class="cartao6">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes de Inverno</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Que condições exigem?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes de Inverno</h3>
+                                <p>Praticados na neve ou gelo. Exemplos: Esqui, Snowboard, Patinação no gelo, Curling. Exigem equipamentos especiais e adaptação ao frio.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">Quanto é 16 em números romanos?</div>
-                <div class="cartao-conteudo-resposta">XVI</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>X representa 10, V representa 5 e I representa 1.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- Card 9 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo9">
-            <div class="cartao9">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>Vogais</h3>
+            <!-- Card 7 - Esportes de Precisão -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo7">
+                        <div class="cartao7">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes de Precisão</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual habilidade desenvolvem?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes de Precisão</h3>
+                                <p>Envolvem mira e exatidão. Exemplos: Tiro com arco, Sinuca, Boliche, Bocha. Desenvolvem concentração e coordenação motora fina.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">Quais são as vogais?</div>
-                <div class="cartao-conteudo-resposta">A,E,I,O,U</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>São A, E, I, O, U.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
+            </article>
 
-  <footer>
-    <div class="footer-text">
-      <a class="texto-rodape">Projeto desenvolvido pela Alura. Melhorado e aplicado por Gabriel Vinícius Rodrigues</a>
-    </div>
-    <div class="mark">
-      <a href="https://github.com/tsmakiBiels66">2025 | @GabrielRodrigues</a>
-    </div>
-  </footer>
+            <!-- Card 8 - Esportes Motorizados -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo8">
+                        <div class="cartao8">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes Motorizados</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Que equipamentos utilizam?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes Motorizados</h3>
+                                <p>Envolvem veículos motorizados. Exemplos: Fórmula 1, Motocross, Rally, Jet ski. Exigem equipamentos de segurança e manutenção dos veículos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 9 - Esportes de Aventura -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo9">
+                        <div class="cartao9">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Esportes de Aventura</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Onde são praticados?</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Esportes de Aventura</h3>
+                                <p>Praticados em ambientes naturais, muitas vezes em contato com a natureza. Exemplos: Trekking, Rafting, Mountain Bike, Rapel. Promovem conexão com o meio ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <a class="texto-rodape">Projeto desenvolvido para estudo de HTML e CSS. Conteúdo sobre esportes.</a>
+        </div>
+        <div class="mark">
+            <a href="https://github.com/tsmakiBiels66">2025 | @tsmakiBiels66</a>
+        </div>
+    </footer>
 </body>
 </html>
