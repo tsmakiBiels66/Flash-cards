@@ -1,214 +1,165 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards de Esportes</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards de Esportes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="titulo">
-            <h2>Tipos de Esportes</h2>
+  <header class="cabecalho">
+    <div class="titulo">
+      <h2>Tipos de Esportes</h2>
+    </div>
+    <div class="mudar">
+      <h2>(Clique nos cards para ver informações sobre cada esporte)</h2>
+    </div>
+    <p>Este projeto apresenta diferentes categorias de esportes, 
+    mostrando suas características principais e curiosidades.</p>
+    <p>Os cards estão organizados em uma matriz 3x3, 
+    cada um representando um tipo diferente de atividade esportiva.</p>
+  </header>
+  
+  <main>
+    <section id="container">
+
+      <!-- Card 1 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes Coletivos</h3>
+            <p>Quais são as principais características?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes Coletivos</h3>
+            <p>Praticados em equipe, exigem cooperação e estratégia. Exemplos: Futebol, Basquete, Vôlei, Handebol. Desenvolvem habilidades sociais e trabalho em equipe.</p>
+          </div>
         </div>
-        <div class="mudar">
-            <h2>(Clique nos cards para ver informações sobre cada esporte)</h2>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes Individuais</h3>
+            <p>O que os diferencia?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes Individuais</h3>
+            <p>Praticados individualmente, focam no autodesenvolvimento. Exemplos: Tênis, Atletismo, Natação, Golfe. Desenvolvem disciplina e superação pessoal.</p>
+          </div>
         </div>
-        <p>Este projeto apresenta diferentes categorias de esportes, 
-        mostrando suas características principais e curiosidades.</p>
-        <p>Os cards estão organizados em uma matriz 3x3, 
-        cada um representando um tipo diferente de atividade esportiva.</p>
-    </header>
-    <main>
-        <section id="container">
-            <!-- Card 1 - Esportes Coletivos -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo1">
-                        <div class="cartao1">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes Coletivos</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Quais são as principais características?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes Coletivos</h3>
-                                <p>Praticados em equipe, exigem cooperação e estratégia. Exemplos: Futebol, Basquete, Vôlei, Handebol. Desenvolvem habilidades sociais e trabalho em equipe.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+      </article>
 
-            <!-- Card 2 - Esportes Individuais -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo2">
-                        <div class="cartao2">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes Individuais</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">O que os diferencia?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes Individuais</h3>
-                                <p>Praticados individualmente, focam no autodesenvolvimento. Exemplos: Tênis, Atletismo, Natação, Golfe. Desenvolvem disciplina e superação pessoal.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 3 - Esportes Radicais -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo3">
-                        <div class="cartao3">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes Radicais</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Por que são considerados radicais?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes Radicais</h3>
-                                <p>Envolvem alto risco e adrenalina. Exemplos: Surf, Escalada, Paraquedismo, Parkour. Exigem preparo físico e controle emocional.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 4 - Esportes de Combate -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo4">
-                        <div class="cartao4">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes de Combate</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Qual seu principal objetivo?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes de Combate</h3>
-                                <p>Envolvem confronto físico entre oponentes. Exemplos: Boxe, Judô, Karatê, Esgrima. Desenvolvem autocontrole e defesa pessoal.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 5 - Esportes Aquáticos -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo5">
-                        <div class="cartao5">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes Aquáticos</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Onde são praticados?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes Aquáticos</h3>
-                                <p>Praticados na água, em piscinas ou ambientes naturais. Exemplos: Natação, Polo Aquático, Mergulho, Canoagem. Melhoram capacidade respiratória.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 6 - Esportes de Inverno -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo6">
-                        <div class="cartao6">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes de Inverno</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Que condições exigem?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes de Inverno</h3>
-                                <p>Praticados na neve ou gelo. Exemplos: Esqui, Snowboard, Patinação no gelo, Curling. Exigem equipamentos especiais e adaptação ao frio.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 7 - Esportes de Precisão -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo7">
-                        <div class="cartao7">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes de Precisão</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Qual habilidade desenvolvem?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes de Precisão</h3>
-                                <p>Envolvem mira e exatidão. Exemplos: Tiro com arco, Sinuca, Boliche, Bocha. Desenvolvem concentração e coordenação motora fina.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 8 - Esportes Motorizados -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo8">
-                        <div class="cartao8">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes Motorizados</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Que equipamentos utilizam?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes Motorizados</h3>
-                                <p>Envolvem veículos motorizados. Exemplos: Fórmula 1, Motocross, Rally, Jet ski. Exigem equipamentos de segurança e manutenção dos veículos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Card 9 - Esportes de Aventura -->
-            <article class="cartao" onclick="this.classList.toggle('flipped')">
-                <div class="geral">
-                    <div class="cartao-conteudo cartao-conteudo9">
-                        <div class="cartao9">
-                            <div class="card-front">
-                                <div class="design-conteudo">
-                                    <h3>Esportes de Aventura</h3>
-                                </div>
-                                <div class="cartao-conteudo-pergunta">Onde são praticados?</div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Esportes de Aventura</h3>
-                                <p>Praticados em ambientes naturais, muitas vezes em contato com a natureza. Exemplos: Trekking, Rafting, Mountain Bike, Rapel. Promovem conexão com o meio ambiente.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-text">
-            <a class="texto-rodape">Projeto desenvolvido para estudo de HTML e CSS. Conteúdo sobre esportes.</a>
+      <!-- Card 3 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes Radicais</h3>
+            <p>Por que são considerados radicais?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes Radicais</h3>
+            <p>Envolvem alto risco e adrenalina. Exemplos: Surf, Escalada, Paraquedismo, Parkour. Exigem preparo físico e controle emocional.</p>
+          </div>
         </div>
-        <div class="mark">
-            <a href="https://github.com/tsmakiBiels66">2025 | @tsmakiBiels66</a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes de Combate</h3>
+            <p>Qual seu principal objetivo?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes de Combate</h3>
+            <p>Envolvem confronto físico entre oponentes. Exemplos: Boxe, Judô, Karatê, Esgrima. Desenvolvem autocontrole e defesa pessoal.</p>
+          </div>
         </div>
-    </footer>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes Aquáticos</h3>
+            <p>Onde são praticados?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes Aquáticos</h3>
+            <p>Praticados na água, em piscinas ou ambientes naturais. Exemplos: Natação, Polo Aquático, Mergulho, Canoagem. Melhoram capacidade respiratória.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes de Inverno</h3>
+            <p>Que condições exigem?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes de Inverno</h3>
+            <p>Praticados na neve ou gelo. Exemplos: Esqui, Snowboard, Patinação no gelo, Curling. Exigem equipamentos especiais e adaptação ao frio.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes de Precisão</h3>
+            <p>Qual habilidade desenvolvem?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes de Precisão</h3>
+            <p>Envolvem mira e exatidão. Exemplos: Tiro com arco, Sinuca, Boliche, Bocha. Desenvolvem concentração e coordenação motora fina.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 8 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes Motorizados</h3>
+            <p>Que equipamentos utilizam?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes Motorizados</h3>
+            <p>Envolvem veículos motorizados. Exemplos: Fórmula 1, Motocross, Rally, Jet ski. Exigem equipamentos de segurança e manutenção dos veículos.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 9 -->
+      <article class="cartao" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Esportes de Aventura</h3>
+            <p>Onde são praticados?</p>
+          </div>
+          <div class="card-back">
+            <h3>Esportes de Aventura</h3>
+            <p>Praticados em ambientes naturais, muitas vezes em contato com a natureza. Exemplos: Trekking, Rafting, Mountain Bike, Rapel. Promovem conexão com o meio ambiente.</p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-text">
+      <a class="texto-rodape">Projeto desenvolvido para estudo de HTML e CSS. Conteúdo sobre esportes.</a>
+    </div>
+    <div class="mark">
+      <a href="https://github.com/tsmakiBiels66">2025 | @tsmakiBiels66</a>
+    </div>
+  </footer>
 </body>
 </html>
+                              
