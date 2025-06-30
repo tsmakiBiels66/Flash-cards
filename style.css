@@ -1,32 +1,59 @@
 :root {
   --primary-color: #fffceb;
-  --secondary-color: #b8e6e7; /* Corrigido */
+  --secondary-color: #b8e6e7;
   --text-color: #000000;
   --link-color: #4f05fc;
   --background-color: #ffffff;
   --button-hover-color: #c504ff;
-  --font-body: "Chocolate Classical Sans", serif;
-  --font-titulo: "Rakkas", serif;
+  --font-body: "Chocolate Classical Sans", serif, sans-serif;
+  --font-titulo: "Rakkas", serif, cursive;
+
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-color: #f1f1f1;
+    --link-color: #89c4ff;
+    --button-hover-color: #ff6fff;
+    --card-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    --card-shadow-hover: 0 6px 14px rgba(255, 255, 255, 0.2);
+  }
+
+  body {
+    background-image: none;
+    background-color: var(--background-color);
+  }
 }
 
 body {
   background-image: url('img/library-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   font-family: var(--font-body);
+  color: var(--text-color);
+  padding-bottom: 80px;
+  margin: 0;
 }
 
 #container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
-  margin-bottom: 80px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
 }
 
 .cabecalho {
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(120, 228, 255, 0.822);
   border-radius: 10px;
   font-size: 2vw;
+  text-align: center;
 }
 
 .cabecalho p {
@@ -42,26 +69,37 @@ body {
 }
 
 .design-conteudo {
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #000;
+  background-color: var(--primary-color);
 }
 
-/* Cartões base */
+/* Cartões */
 .cartao {
+  background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
   color: red;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 8px;
   border: 2px solid #000;
-  margin-top: 20px;
-  max-width: 300px;
+  max-width: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform 0.8s, box-shadow 0.3s;
   position: relative;
   cursor: pointer;
+  backface-visibility: hidden;
+  box-shadow: var(--card-shadow);
 }
 
-/* Variações de fundo */
+.cartao:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.cartao.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Variantes */
 .cartao1 { background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575)); }
 .cartao2 { background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568)); }
 .cartao3 { background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61)); }
@@ -72,18 +110,14 @@ body {
 .cartao8 { background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568)); }
 .cartao9 { background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596)); }
 
-/* Flip */
-.cartao.flipped {
-  transform: rotateY(180deg);
-}
-
+/* Faces dos cartões */
 .card-front,
 .card-back {
   backface-visibility: hidden;
   text-align: left;
   word-wrap: break-word;
   overflow: hidden;
-  line-height: 20px;
+  line-height: 1.4em;
   font-size: 15px;
 }
 
@@ -93,22 +127,27 @@ body {
   justify-content: flex-start;
 }
 
+/* Rodapé */
 footer {
-  padding: 5px;
+  padding: 10px;
   background-color: #000;
   border-radius: 5px;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .texto-rodape {
   color: #fff;
+  text-align: center;
+  font-size: 14px;
 }
 
 .mark a {
   color: aqua;
+  text-decoration: none;
 }
 
 .mark a:hover {
