@@ -1,104 +1,232 @@
-:root {
-    --destaque-color: #FFFF00;  /* Amarelo no lugar do vermelho */
-    --destaque-bg: #000000;     /* Preto para fundo */
+:root{
     --primary-color: #fffceb;
-    --secondary-color: #b8e6e7;
+    --secondayr-color: #b8e6e7;
     --text-color: #000000;
     --link-color: #4f05fc;
     --background-color: #FFFFFF;
-    --button-hover-color: #c504ff;
-    --font-body: "Arial", sans-serif;
-    --font-titulo: "Georgia", serif;
+    --button-hover-color:#c504ff;
+    --font-body:"Chocolate Classical Sans", serif;
+    --font-titulo: "Rakkas", serif;
 }
-
-body {
-    background-color: #f5f5f5;
-    font-family: var(--font-body);
-    margin: 0;
-    padding-bottom: 100px;
-    line-height: 1.6;
-}
-
-/* Elementos que eram vermelhos agora são amarelos com fundo preto */
-.mudar {
-    color: var(--destaque-color);
-    background-color: var(--destaque-bg);
-    font-weight: bold;
-    font-size: larger;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.cabecalho p {
-    color: var(--text-color); /* Mantido o texto normal */
-    text-align: center;
-    padding: 10px 15px;
-    margin: 10px 0;
-}
-
-/* Cartões com texto amarelo onde era vermelho */
-.card-front {
-    background: var(--destaque-bg); /* Fundo preto */
-    color: var(--destaque-color);   /* Texto amarelo */
-    border: 2px solid var(--destaque-color); /* Borda amarela */
-}
-
-.card-back {
-    background: var(--destaque-bg); /* Fundo preto */
-    color: var(--destaque-color);   /* Texto amarelo */
-    transform: rotateY(180deg);
-}
-
-.design-conteudo {
-    background-color: rgba(0,0,0,0.7); /* Fundo preto semi-transparente */
-    color: var(--destaque-color);
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 1px solid var(--destaque-color);
-}
-
-/* Restante do CSS permanece igual */
-#container {
+#container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
+    justify-content: space ;
     margin-bottom: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
-
-.cabecalho {
-    padding: 20px;
-    background-color: var(--secondary-color);
+.cabecalho{
+    padding: 5px;
+    background-color: rgba(120, 228, 255, 0.822);
     border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 2vw;
 }
-
-/* ... (o restante do seu CSS original permanece igual) ... */
-
-footer {
-    padding: 15px;
-    background-color: var(--destaque-bg); /* Fundo preto */
-    color: var(--destaque-color);        /* Texto amarelo */
+.mudar{
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: larger;
+}
+.cabecalho p{
+    color: #c94e4e;
+    text-decoration: line-through;
+}
+body{
+    background-image: url('img/library-background.jpg');
+    font-family: var(--font-body);
+}
+.design-conteudo{
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+}
+.cartao1{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao2{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao3{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao4{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao5{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao6{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao7{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao8{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao9{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao.flipped .cartao2,
+.cartao.flipped .cartao1,
+.cartao.flipped .cartao3,
+.cartao.flipped .cartao4,
+.cartao.flipped .cartao5,
+.cartao.flipped .cartao6,
+.cartao.flipped .cartao7,
+.cartao.flipped .cartao8,
+.cartao.flipped .Cartão9{
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  backface-visibility: hidden;
+  text-align: left;
+  font-size: 2vw;
+}
+.card-back {
+  transform: rotateY(180deg);
+  text-decoration: underline;
+  justify-content: flex-start;
+  overflow: hidden;
+  word-wrap: break-word;
+  line-height: 20px;
+  font-size: 15px;
+}
+.card-front{
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 15px;
+}
+footer{
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 5px;
     position: fixed;
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
+    margin-top: 10px;
 }
-
-.mark a {
-    color: var(--destaque-color);
-    text-decoration: none;
-    transition: color 0.3s;
+.texto-rodape{
+    color: #FFFFFF;
 }
-
-.mark a:hover {
-    color: var(--secondary-color);
+.mark a{
+    color: aqua;
+}
+.mark a:hover{
+    color:deepskyblue;
 }
