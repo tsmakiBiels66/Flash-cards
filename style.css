@@ -187,7 +187,7 @@ body{
 .cartao.flipped .cartao6,
 .cartao.flipped .cartao7,
 .cartao.flipped .cartao8,
-.cartao.flipped .Cartão9{
+.cartao.flipped .cartao9{
     transform: rotateY(180deg);
 }
 .card-front, .card-back {
